@@ -1,8 +1,7 @@
 <script>
 	
 	import Sidebar from '$lib/Sidebar.svelte'
-	
-import Navbar from '$lib/Navbar.svelte'
+	import Navbar from '$lib/Navbar.svelte'
 
 	let open = false
 </script>
