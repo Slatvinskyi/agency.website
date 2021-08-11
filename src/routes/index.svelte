@@ -1,11 +1,20 @@
-<p class="inline-flex justify-center items-center py-2 px-6 text-sm font-medium tracking-wide text-white bg-gradient-to-r rounded-r-full rounded-tl-full from-gray-600 to-gray-700">
-    Home
-  </p>
+<script>
+	import Box from '$lib/Box.svelte';
+import Type from '$lib/Type.svelte';
+import { fade, fly } from 'svelte/transition';
 
-  <div class=" rounded-xl bg-gray-900 relative py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:auto-rows-max lg:gap-x-8 xl:gap-x-12 sm:px-6 sm:py-24 lg:py-32 lg:px-8 shadow-xl">
-   
+  
+	let visible = true;
+</script>
 
-    <!-- Card content text-->
+
+{#if visible}
+	<div in:fly="{{ y: 200, duration: 2000 }}" out:fade>
+    <p class="inline-flex justify-center items-center py-2 px-6 text-sm font-medium tracking-wide text-white bg-gradient-to-r rounded-r-full rounded-tl-full from-gray-600 to-gray-700">
+      Home
+    </p>
+		 <Box>
+         <!-- Card content text-->
     <div class="  rounded-xl flex flex-col justify-center items-center lg:items-start bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
       <h1 class="mx-auto text-2xl font-extrabold text-gray-700 sm:text-5xl md:text-6xl lg:text-5xl xl:text-4xl">
         Let’s make your product a success
@@ -14,10 +23,13 @@
         Welcome
       </p>-->
       <div class="z-30 mx-auto mt-6 w-full max-w-lg text-center lg:text-left lg:max-w-none md:max-w-2xl">
-        
-        <p class="mt-6 text-xl text-gray-300">
+        <Type>
+          {#if visible}
+        <p class="mt-6 text-xl text-gray-300" in:typewriter >
           Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
         </p>
+        {/if}
+      </Type>
       </div>
       <!-- Hero buttons -->
       <div class="z-30 mt-10 sm:flex sm:justify-center lg:justify-end">
@@ -35,4 +47,6 @@
     <div class="flex justify-center items-center mx-auto mt-12 max-w-xl sm:mt-16 lg:mt-0 lg:max-w-none">
       <img src="/323.JPG" class="object-cover z-30 w-auto h-full rounded-lg shadow-md">
     </div>
+     </Box>
   </div>
+{/if}
