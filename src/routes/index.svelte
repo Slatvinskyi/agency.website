@@ -2,6 +2,7 @@
 	import Box from '$lib/Box.svelte';
 import Type from '$lib/Type.svelte';
 import { fade, fly } from 'svelte/transition';
+import Footer from "$lib/Footer.svelte";
 
   
 	let visible = true;
@@ -10,9 +11,7 @@ import { fade, fly } from 'svelte/transition';
 
 {#if visible}
 	<div in:fly="{{ y: 200, duration: 2000 }}" out:fade>
-    <p class="inline-flex justify-center items-center py-2 px-6 text-sm font-medium tracking-wide text-white bg-gradient-to-r rounded-r-full rounded-tl-full from-gray-600 to-gray-700">
-      Home
-    </p>
+    
 		 <Box>
          <!-- Card content text-->
     <div class="  rounded-xl flex flex-col justify-center items-center lg:items-start bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
@@ -33,10 +32,10 @@ import { fade, fly } from 'svelte/transition';
       </div>
       <!-- Hero buttons -->
       <div class="z-30 mt-10 sm:flex sm:justify-center lg:justify-end">
-        <a class="flex justify-center items-center py-4 px-8 w-auto h-14 text-base font-semibold leading-snug bg-white rounded-full transition ease-in-out duration-250 text-dark-900 hover:text-white focus:outline-none hover:bg-gray-900" href="/crator_template/contact">
+        <a class="flex justify-center items-center py-4 px-8 w-auto h-14 text-base font-semibold leading-snug bg-white rounded-full transition ease-in-out duration-250 text-dark-900 hover:text-white focus:outline-none hover:bg-gray-900" href="services">
           Let's get started
         </a>
-        <a class="flex relative justify-center items-center px-8 mt-5 ml-0 w-auto h-14 text-base font-medium leading-snug text-white sm:ml-4 sm:mt-0 group" href="/crator_template/services">
+        <a class="flex relative justify-center items-center px-8 mt-5 ml-0 w-auto h-14 text-base font-medium leading-snug text-white sm:ml-4 sm:mt-0 group" href="about">
           <span class="block absolute top-0 left-0 z-10 w-full h-full bg-gradient-to-r rounded-full transition-all ease-in-out duration-250 from-gray-800 to-gray-900 md:w-14 md:group-hover:w-full"></span>
           <span class="relative z-20">Learn more</span>
         </a>
@@ -50,3 +49,36 @@ import { fade, fly } from 'svelte/transition';
      </Box>
   </div>
 {/if}
+
+{#if visible}
+	<div in:fly="{{ x: 200, duration: 2000 }}" out:fade>
+
+    <Box>
+     
+    
+    </Box>
+  </div>
+{/if}
+
+{#if visible}
+	<div in:fly="{{ y: 200, duration: 2000 }}" out:fade>
+
+    <Box></Box>
+  </div>
+{/if}
+
+{#if visible}
+	<div in:fly="{{ x: 200, duration: 2000 }}" out:fade>
+
+    <Box></Box>
+  </div>
+{/if}
+
+{#if visible}
+	<div in:fly="{{ y: 200, duration: 2000 }}" out:fade>
+
+    <Box></Box>
+  </div>
+{/if}
+
+<Footer />

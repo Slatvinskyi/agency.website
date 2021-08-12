@@ -27,7 +27,7 @@
 
 
 {#if visible}
-	<p class="mt-6 text-xl text-gray-300" in:typewriter>
+	<p class="mt-6 text-xl text-gray-300"in:typewriter>
 		Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
 	</p>
 {/if}
