@@ -87,7 +87,7 @@
           </a>
 
           <!-- Facebook -->
-          <a class="flex justify-center items-center w-12 h-12 rounded-full transition duration-300 ease-in-out bg-gray-700 hover:text-gray-900 hover:bg-white  text-dark-300" href="">
+          <a class="flex justify-center items-center w-12 h-12 rounded-full transition duration-300 ease-in-out bg-gray-700 hover:text-gray-900 hover:bg-white  text-gray-300" href="">
             <!-- TablerIcon name: brand-facebook -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

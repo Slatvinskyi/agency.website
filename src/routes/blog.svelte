@@ -1,5 +1,6 @@
 <script context="module">
     import Footer from "$lib/Footer.svelte";
+    import { fade, fly } from 'svelte/transition';
 
     export const load = async({fetch}) => {
         const res = await fetch("https://jsonplaceholder.typicode.com/posts")
@@ -11,6 +12,8 @@
             },
         };
     };
+
+    let visible = true;
     </script>
     
     <script>
@@ -23,8 +26,11 @@
           });
              
     </script>
+
     
     <h1>Posts</h1>
+    {#if visible}
+	<div in:fly="{{ y: 200, duration: 2000 }}" out:fade>
     
     <input type="text" placeholder="search" bind:value={searchTerm} />
     
@@ -41,6 +47,8 @@
         <p>No posts found with "{searchTerm}"</p>
         {/if}
     </div>
+</div>
+{/if}
     
     <style>
         .posts {
