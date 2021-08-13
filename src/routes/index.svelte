@@ -21,7 +21,7 @@ import Footer from "$lib/Footer.svelte";
       <!--<p class="inline-flex z-30 justify-center items-center py-2 px-6 text-sm font-medium tracking-wide text-white bg-gradient-to-r rounded-r-full rounded-tl-full from-gray-800 to-gray-900">
         Welcome
       </p>-->
-      <div class="z-30 mx-auto mt-6 w-full max-w-lg text-center lg:text-left lg:max-w-none md:max-w-2xl">
+      <div class="mx-auto mt-6 w-full max-w-lg text-center lg:text-left lg:max-w-none md:max-w-2xl">
         <Type>
           {#if visible}
         <p class="mt-6 text-xl text-gray-300" in:typewriter >
@@ -31,7 +31,7 @@ import Footer from "$lib/Footer.svelte";
       </Type>
       </div>
       <!-- Hero buttons -->
-      <div class="z-30 mt-10 sm:flex sm:justify-center lg:justify-end">
+      <div class="mt-10 sm:flex sm:justify-center lg:justify-end">
         <a class="flex justify-center items-center py-4 px-8 w-auto h-14 text-base font-semibold leading-snug bg-white rounded-full transition ease-in-out duration-250 text-dark-900 hover:text-white focus:outline-none hover:bg-gray-900" href="services">
           Let's get started
         </a>

@@ -9,6 +9,7 @@
 		<a class="block hover:text-gray-700 hover:no-underline" href="/contact">Contact</a>
 		<a class="block hover:text-gray-700 hover:no-underline" href="/services">Services</a>
 		<a class="block hover:text-gray-700 hover:no-underline" href="/about">About</a>
+		<a class="block hover:text-gray-700 hover:no-underline" href="/blog">Blog</a>
 	</nav>
 </aside>
 
