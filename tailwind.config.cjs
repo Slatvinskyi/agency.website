@@ -6,7 +6,7 @@ const config = {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require("kutty")],
 };
 
 module.exports = config;

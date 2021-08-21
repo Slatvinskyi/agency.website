@@ -1,11 +1,9 @@
 <script>
-import "../app.postcss";
-import Nav from "$lib/Nav.svelte";
-
-
+    import "../app.postcss";
+    import Nav from "$lib/Nav.svelte";
+        
+    </script>
     
-</script>
-
-<Nav />
-
-<slot></slot>
+    <Nav />
+    
+    <slot></slot>

@@ -5,8 +5,6 @@ import Footer from "$lib/Footer.svelte";
  
 import Box from '$lib/Box.svelte';
 
-
-
 let SwipeComponent;
 let SwipeItemComponent;
 
@@ -27,6 +25,8 @@ let SwipeItemComponent;
 </script>
 
 
+
+<div class="">
 <section>
   <div class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
     <div class="container mx-auto flex flex-col items-center px-4 py-16 pb-24 text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
@@ -45,7 +45,7 @@ let SwipeItemComponent;
   </div>
   </section>
 
-<div class="swipe-holder w-screen h-96 bg-size bg-cover bg-center rounded-xl mt-16">
+<div class="swipe-holder w-screen h-96 bg-size bg-cover bg-center rounded-xl mt-0">
   <svelte:component this={SwipeComponent} {...swipeConfig}>
   <svelte:component this={SwipeItemComponent}>
     <img src="/323.JPG" alt="">
@@ -61,10 +61,10 @@ let SwipeItemComponent;
 </svelte:component>
 </div>
 
-<div class="grid grid-cols-4 m-16">
+<div class="grid grid-cols-4 m-14">
   <div class="p-8">
-    <div class="relative bg-black shadow-lg rounded-lg group h-64 w-64 flex justify-center items-center">
-      <div class="rounded-lg h-full w-full absolute z-10 bg-cover bg-center hover:opacity-50 transition-all duration-500 ease-in-out" style="background-image: url('323.JPG')">
+    <div class="relative bg-black shadow-lg rounded-xl group h-64 w-64 flex justify-center items-center">
+      <div class="rounded-xl h-full w-full absolute z-10 bg-cover bg-center hover:opacity-50 transition-all duration-500 ease-in-out" style="background-image: url('323.JPG')">
       </div>
       <p class="font-bold text-lg text-white absolute z-20 pointer-events-none">
         Video Games
@@ -106,9 +106,7 @@ let SwipeItemComponent;
 
 <div class="flex flex-wrap items-center mt-16">   
   <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">   
-    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-50">    
-      <i class="fas fa-user-friends text-xl"></i>   
-    </div>    
+       
     <h3 class="text-3xl mb-2 font-semibold leading-normal">Working with us is a pleasure</h3>   
     <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.</p>    
     <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. Just make sure you enable them first via JavaScript.</p>   
@@ -128,23 +126,9 @@ let SwipeItemComponent;
   </div>    
 </div>
 
-<div class="shadow bg-white rounded-xl m-40">
-  <div class=" bg-size bg-cover bg-center"
-       style="background-image: url('/323.JPG')">
-      <div class="p-4 h-32 flex items-end text-white">
-          <h3 class="mb-2">Card Title</h3>
-      </div>
-  </div>
-  <div class="p-4">
-      <p class="text-grey-600 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor.
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-      <div class="mt-4">
-          <a href="#" class="no-underline mr-4 text-blue-500 hover:text-blue-400">Link 1</a>
-      </div>
-  </div>
-</div>
+<div class="flex flex-wrap m-32"> <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"> <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"> <div class="px-4 py-5 flex-auto"> <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"> <i class="fas fa-award"></i> </div> <h6 class="text-xl font-semibold">Awarded Agency</h6> <p class="mt-2 mb-4 text-gray-600"> Divide details about your product or agency work into parts. A paragraph describing a feature will be enough. </p> </div> </div> </div> <div class="w-full md:w-4/12 px-4 text-center"> <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"> <div class="px-4 py-5 flex-auto"> <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"> <i class="fas fa-retweet"></i> </div> <h6 class="text-xl font-semibold">Free Revisions</h6> <p class="mt-2 mb-4 text-gray-600"> Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious. </p> </div> </div> </div> <div class="pt-6 w-full md:w-4/12 px-4 text-center"> <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"> <div class="px-4 py-5 flex-auto"> <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"> <i class="fas fa-fingerprint"></i> </div> <h6 class="text-xl font-semibold">Verified Company</h6> <p class="mt-2 mb-4 text-gray-600"> Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged! </p> </div> </div> </div> </div>
+
+
 
 
 
@@ -249,5 +233,7 @@ let SwipeItemComponent;
   <img src="/323.JPG" class="object-cover z-30 w-auto h-full rounded-lg shadow-md">
 </div>
  </Box>
+
+</div>
 
 <Footer />
