@@ -11,7 +11,7 @@ let visible = true;
 <div class=" py-12 px-4 mx-auto w-6/12 rounded-3xl shadow-xl lg:mr-0 lg:ml-auto bg-gray-700 sm:p-16  lg:p-14 xl:p-16 m-10">
 
   <!-- Contact form -->
-  <form action="https://formspree.io/f/mgepbpkz" method="post">
+  <form action="https://formsubmit.co/andrii.slatvinskyi@gmail.com" method="POST">
     <div>
       <label for="name" class="ml-0.5 text-gray-300 font-medium text-sm">
         Name *
