@@ -2,8 +2,8 @@
 	export let open = false
 </script>
 
-<aside class="w-72 h-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 fixed " class:open>
-	<nav class="p-12 text-xl text-gray-500">
+<aside class="w-72 h-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 fixed z-10 " class:open>
+	<nav class="p-12 text-xl text-gray-500 ">
 		
 		<a class="block hover:text-gray-700 hover:no-underline" href="/">Home</a>
 		<a class="block hover:text-gray-700 hover:no-underline" href="/contact">Contact</a>
